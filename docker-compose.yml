@@ -14,6 +14,6 @@ services:
       - "REDIS_TTL=3600"
 
   quetre-redis:
-   container_name: quetre-redis
-   image: docker.io/redis:alpine
-   restart: unless-stopped
+    container_name: quetre-redis
+    image: docker.io/redis:alpine
+    restart: unless-stopped
