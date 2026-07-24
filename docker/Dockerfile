@@ -7,6 +7,6 @@ RUN apt update -y && apt upgrade -y \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g pnpm \
     && git clone --depth=1 https://github.com/zyachel/quetre.git . \
-    && pnpm install
+    && pnpm install --dangerously-allow-all-builds
 EXPOSE 3000
 CMD ["pnpm", "start"]
