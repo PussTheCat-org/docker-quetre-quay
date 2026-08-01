@@ -46,3 +46,4 @@ jobs:
         push: true
         tags: quay.io/pussthecatorg/quetre:latest
         build-args: release=1
+        provenance: false
